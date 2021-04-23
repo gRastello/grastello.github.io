@@ -4,9 +4,9 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>bar/blog.html</loc><lastmod>2021-04-15</lastmod><priority>1.0</priority></url>
-<url><loc>bar/docs.html</loc><lastmod>2021-04-15</lastmod><priority>1.0</priority></url>
-<url><loc>bar/index.html</loc><lastmod>2021-04-15</lastmod><priority>1.0</priority></url>
-<url><loc>bar/blog/sugar.html</loc><lastmod>2021-04-15</lastmod><priority>1.0</priority></url>
-<url><loc>bar/blog/telegram.html</loc><lastmod>2021-04-15</lastmod><priority>1.0</priority></url>
+<url><loc>bar/blog.html</loc><lastmod>2021-04-17</lastmod><priority>1.0</priority></url>
+<url><loc>bar/docs.html</loc><lastmod>2021-04-17</lastmod><priority>1.0</priority></url>
+<url><loc>bar/index.html</loc><lastmod>2021-04-17</lastmod><priority>1.0</priority></url>
+<url><loc>bar/blog/sugar.html</loc><lastmod>2021-04-17</lastmod><priority>1.0</priority></url>
+<url><loc>bar/blog/telegram.html</loc><lastmod>2021-04-17</lastmod><priority>1.0</priority></url>
 </urlset>
