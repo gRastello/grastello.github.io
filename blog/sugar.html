@@ -1,0 +1,47 @@
+<title>I drink my commutativity black</title>
+<h1>I drink my commutativity black</h1>
+<p><small>Mon 12 Apr 2021</small></p>
+
+<p>
+  In the C programming language an array <code>a</code> is just a pointer to some memory.
+  One can get the value pointed to by <code>a</code> by using the dereferencing operator <code>*</code>; next and previous values are obtained by first performing pointer arithmetic and then dereferencing.
+</p>
+
+<pre>int a[3] = {1, 2, 3};
+
+/* The first value of the array. */
+*a;
+
+/* The second and third values. */
+*(a + 1);
+*(a + 2);
+</pre>
+
+<p>
+  As accessing elements of an array is a pretty common operation and this notation, while being faithful to what will actually happen once the program is compiled, is very cumbersome (even more so if one has to work with arrays of arrays i.e. matrices/tables) the C programming language allows you to write <code>a[n]</code> instead of <code>*(a + n)</code>; we usually read this notation as "from array <code>a</code> take element <code>n</code>".
+  This is, however, only syntactic sugar i.e. a mere "shortcut".
+</p>
+
+<p>
+  Now as we all (should) know the sum of numbers, and thus of memory locations as well, is a commutative operation: <code>a + b == b + a</code>.
+  But then <code>*(a + n) == *(n + a)</code> and, by sugaring both members one obtains <code>a[n] == n[a]</code>!
+  This feels weird but compiles and works just fine.
+</p>
+
+<pre>#include "stdio.h"
+
+int a[3] = {1, 2, 3};
+    
+int
+main() {
+  if (a[0] == 0[a])
+    printf("yey!\n");
+
+  return 0;
+}
+</pre>
+
+<p>
+  It isn't even weird at all if one remembers that in C arrays are not abstract data structures, but just pointers and thus we should really read <code>a[n]</code> as "from position <code>a</code> in memory read the <code>(n + 1)</code>-th element".
+  Now you can go and flip around all array lookups in your friends projects as a practical joke!
+</p>

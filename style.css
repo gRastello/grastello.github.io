@@ -1,0 +1,64 @@
+body {
+    font-family: sans-serif;
+    text-align: justify;
+
+    line-height: 1.4;
+    font-size:18px;
+    color:#444
+}
+
+main {
+    margin: 100px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+}
+
+h1, h2, h3 {
+    padding-bottom: .3em;
+    border-bottom: 1px solid #e1e4e8;
+    line-height: 1.2;
+}
+
+hr {
+    border: 1px solid #e1e4e8;
+}
+
+code {
+    background: #e1e4e8;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+.bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.foo {
+    /* display: inline-block; */
+    width: 100%;
+    margin: 10px;
+}
+
+/* I swear I hate this stuff. */
+@media (max-width: 55em) {
+    main {
+	margin: 10px;
+	padding-left: 16px;
+	padding-right: 16px;
+
+	border: 1px solid #e1e4e8;
+	border-radius: 6px;
+    }
+
+    .bar {
+	display: block;
+    }
+}
