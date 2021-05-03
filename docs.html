@@ -1,85 +1,122 @@
-<style>
-  .document {
-      border-left: 10px solid slategray;
-      padding-left: 10px;
-  }
+<head>
+  <title>Gabriele Rastello - Documents & Notes</title>
+  <link rel='stylesheet' type='text/css' href='style.css'>
+  <meta charset="utf-8"/>
+  <link rel="shortcut icon" href="rsc/favicon.png" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  .document ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-  }
+  <style>
+    .document .links a {
+	display: inline-block;
+	margin-top: 1rem;
+	margin-right: 1rem;
+	color: #F6F6F6;
+	background-color: #262626;
+	border-color: #F6F6F6;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0.3rem;
+	text-decoration: none;
+	padding: 10px;
+    }
 
-  .document li {
-      float: left;
-      padding: 14px 16px;
-      display: block;
-  }
+    .document .links a:hover {
+	text-decoration: none;
+    }
 
-  .document li a {
-      text-align: center;
-      text-decoration: none;
-  }
+    .document p {
+	margin-bottom: 0px;
+	margin-top: 0px;
+    }
 
-  .document p {
-      margin-bottom: 0px;
-  }
+    .document h3 {
+	margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <h1>Documents and Notes</h1>
+  </div>
+  <div class="header">
+    <nav>
+      <a href="index.html"><strong>Home</strong></a>
+      <a href="docs.html"><strong>Notes/Documents</strong></a>
+      <a href="blog.html"><strong>Blog</strong></a>
+      <a href="linkfarm.html"><strong>Linkfarm</strong></a>
+    </nav>
+  </div>
+  <div class="textcontainer">
+    <h1>Documents and Notes</h1>
+    <p>
+      Some (mostly math-related) documents that I wrote for one reason or another.
+      All of them are freely downloadable as pdf files and you can look at the source code of (most of) them too (why anyonw whould want to do such a thing is beyond me).
+      Unless stated differently the files are in English.
+    </p>
 
-  .document li a:hover {
-      text-decoration: underline;
-  }
-</style>
+    <ul>
+      <li>
+      <div class="document">
+	<h3>Abelian Categories and their Embedding Theorems</h3>
+	<p>
+	  My undergraduate thesis on abelian categories.
+	  It contains a proof of Mitchell's Embedding Theorem and an introduction to Homological Algebra.
+	</p>
+	<div class="links">
+	  <a href="rsc/rastello_thesis.pdf">download</a>
+	</div>
+      </div>
+      </li>
 
-<title>Gabriele Rastello - Docs</title>
-<h1>Docs</h1>
-<p>
-  Some (mostly math-related) documents that I wrote for one reason or another.
-  All of them are freely downloadable as pdf files and you can look at the source code of (most of) them too (but why whould you want to do that?).
-</p>
+      <li>
+      <div class="document">
+	<h3>Notes on Abelian Categories and Mitchell’s Embdedding Theorem</h3>
+	<p>
+	  The same thing as my undergraudate thesis, but in notes format.
+	</p>
+	<div class="links">
+	  <a href="https://github.com/gRastello/mitchell/raw/master/build/mitchell.pdf">download</a>
+	  <a href="https://github.com/gRastello/mitchell">source code</a>
+	</div>
+      </div>
+      </li>
 
-<div class="document">
-  <h2>Abelian Categories and their Embedding Theorems</h2>
-  <p>
-    My undergraduate thesis on abelian categories.
-    Contains a proof of Mitchell's Embedding Theorem and an introduction to Homological Algebra.
-  </p>
-  <ul>
-    <li><a href="rsc/rastello_thesis.pdf">download link</a></li>
-  </ul>
-</div>
+      <li>
+      <div class="document">
+	<h3>Grothendieck’s Galois Theory</h3>
+	<p>
+	  Notes on Grothendieck's categorical interpretation of Galois Theory.
+	  Very short, mostly a reframing of the first sections of <a href="https://arxiv.org/abs/math/0009145">this paper</a> with some more in-depth proofs.
+	</p>
+	<div class="links">
+	  <a href="https://github.com/gRastello/grothendieck-galois/raw/main/build/grothendiek_galois.pdf">download</a>
+	  <a href="https://github.com/gRastello/grothendieck-galois">source code</a>
+	</div>
+      </div>
+      </li>
 
-<div class="document">
-  <h2>Notes on Abelian Categories and Mitchell’s Embdedding Theorem</h2>
-  <p>
-    The same thing as my undergraudate thesis, but in notes format.
-  </p>
-  <ul>
-    <li><a href="https://github.com/gRastello/mitchell/raw/master/build/mitchell.pdf">download link</a></li>
-    <li><a href="https://github.com/gRastello/mitchell">source code</a></li>
-  </ul>
-</div>
+      <li>
+      <div class="document">
+	<h3>Duality Theorem for Linear Programming and Farkas' Lemma</h3>
+	<p>
+	  Notes <b>in italian</b> about the Duality Theorem for linear programming.
+	  We briefly present both linear programming and the Farks' Lemma and then use it to prove the Duality Theorem.
+	</p>
+	<div class="links">
+	  <a href="https://github.com/gRastello/farkas/raw/master/build/farkas.pdf">download</a>
+	  <a href="https://github.com/gRastello/farkas">source code</a>
+	</div>
+      </div>
+      </li>
+    </ul>
 
-<div class="document">
-  <h2>Grothendieck’s Galois Theory</h2>
-  <p>
-    Notes on Grothendieck's categorical interpretation of Galois Theory.
-    Very short, mostly a reframing of the first sections of <a href="https://arxiv.org/abs/math/0009145">this paper</a> with some more in-depth proofs.
-  </p>
-  <ul>
-    <li><a href="https://github.com/gRastello/grothendieck-galois/raw/main/build/grothendiek_galois.pdf">download link</a></li>
-    <li><a href="https://github.com/gRastello/grothendieck-galois">source code</a></li>
-  </ul>
-</div>
-
-<div class="document">
-  <h2>Duality Theorem for Linear Programming and Farkas' Lemma</h2>
-  <p>
-    Notes <b>in italian</b> about the Duality Theorem for linear programming.
-    We briefly present both linear programming and the Farks' Lemma and then use it to prove the Duality Theorem.
-  </p>
-  <ul>
-    <li><a href="https://github.com/gRastello/farkas/raw/master/build/farkas.pdf">download link</a></li>
-    <li><a href="https://github.com/gRastello/farkas">source code</a></li>
-  </ul>
-</div>
+    <hr>
+    <p>
+      <center>
+	<small>
+	  Built with no static site generator whatsoever.
+	</small>
+      </center>
+    </p>
+  </div>
+</body>

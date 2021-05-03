@@ -1,18 +1,30 @@
 <head>
   <title>Gabriele Rastello - Homepage</title>
   <link rel='stylesheet' type='text/css' href='style.css'>
+  <script src="scripts.js"></script>
   <meta charset="utf-8"/>
   <link rel="shortcut icon" href="rsc/favicon.png" type="image/x-icon" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <main>
+  <div class="top">
+    <h1>Gabriele Rastello</h1>
+  </div>
+  <div class="header">
+    <nav>
+      <a href="index.html"><strong>Home</strong></a>
+      <a href="docs.html"><strong>Notes/Documents</strong></a>
+      <a href="blog.html"><strong>Blog</strong></a>
+      <a href="linkfarm.html"><strong>Linkfarm</strong></a>
+    </nav>
+  </div>
+  <div class="textcontainer">
     <h1>Homepage</h1>
     <p>
       I’m Gabriele Rastello and this is my homepage! 
     </p>
 
-    <img style="float: right; padding: 20px; width: 250px;" src="rsc/wip.gif">
+    <img style="float: right; padding: 20px; width: 250px;" src="rsc/haro1.png" onmouseover="haro_over(this)" onmouseout="haro_out(this)">
 
     <p>
       Currently I’m a master student in mathematics at UniTo (Turin, Italy).
@@ -22,44 +34,30 @@
 
     <p>
       I also have a <a href="https://www.youtube.com/channel/UCfWJa4oMN7dno23KdxoGSAw">youtube channel</a> where I make introductory videos on Category Theory in Italian (and I'm very inconsistent about it) and a <a href="blog.html">blog</a> because some times I like to write about things.
-      This website also hosts a collection of notes and other documents on various topics (basically only math; see below) that might be useful to someone else.
+      This website also hosts a collection of <a href="docs.html">notes and other documents</a> on various topics (basically only math; see below) that might be useful to someone else.
     </p>
 
-    <div class="bar">
-      <div class="foo">
-	<h3>Where to find me</h3>
-	<ul>
-	  <li>Youtube,</li>
-	  <li><code>gabriele &middot; rastello &times; edu &middot; unito &middot; it</code>.</li>
-	</ul>
-      </div>
+    <h3>Where to find me</h3>
+    <ul>
+      <li><a href="https://www.youtube.com/channel/UCfWJa4oMN7dno23KdxoGSAw">Youtube</a>,</li>
+      <li><a href="https://github.com/gRastello">Github</a>,</li>
+      <li><code>gabriele &middot; rastello &times; edu &middot; unito &middot; it</code>.</li>
+    </ul>
 
-      <div class="foo">
-	<h3>Docs</h3>
-	<ul>
-	  <li>mitchell</li>
-	  <li>thesis</li>
-	  <li>farks</li>
-	  <li>other</li>
-	</ul>
-      </div>
-    </div>
+    <h3>Some blog posts</h3>
+    <ul>
+      <li><code>2021/04/12</code> - <a href="blog/sugar.html">I drink my commutativity black</a></li>
+      <li><code>2021/01/13</code> - <a href="blog/telegram.html">About Telegram and open sourcing stuff</a></li>
 
-    <div class="foo">
-      <h3>Blog</h3>
-      <ul>
-	<li><code>yyyy/mm/dd</code> - article 1</li>
-	<li><code>yyyy/mm/dd</code> - article 2</li>
-      </ul>
-    </div>
+    </ul>
     
     <hr>
     <p>
       <center>
 	<small>
-	  Build with no static site generator whatsoever.
+	  Built with no static site generator whatsoever.
 	</small>
       </center>
     </p>
-  </main>
+  </div>
 </body>

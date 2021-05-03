@@ -1,33 +1,50 @@
 body {
-    font-family: sans-serif;
+    background-image: linear-gradient(#F2EFE4, white);
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+.top {
+    background: #262626;
+    color: #F6F6F6;
+    text-align: center;
+    overflow: auto;
+    margin-top: -10px;
+    margin-bottom: -10px
+}
+
+.header nav {
+    background: #F2EFE4;
+    border-bottom: 1px solid #D4CBB6;
+    text-align: center;
+    font-size: .9em;
+    font-weight: 400;
+}
+
+.header nav a {
+    display: inline-block;
+    font-size: .9em;
+    color: #3F3D32;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.header nav a:hover {
+    display: inline-block;
+    background-color: #D4CBB6;
+    border-top: 0px;
+}
+
+.textcontainer {
+    font-size: 1.3em;
+    width: 75%;
+    margin: 0 auto;
+    overflow: auto;
     text-align: justify;
-
-    line-height: 1.4;
-    font-size:18px;
-    color:#444
 }
 
-main {
-    margin: 100px;
-    padding-left: 32px;
-    padding-right: 32px;
-
-    border: 1px solid #e1e4e8;
-    border-radius: 6px;
-}
-
-h1, h2, h3 {
-    padding-bottom: .3em;
-    border-bottom: 1px solid #e1e4e8;
-    line-height: 1.2;
-}
-
-hr {
-    border: 1px solid #e1e4e8;
-}
-
-code {
-    background: #e1e4e8;
+.textcontainer code {
+    background-color: #D4CBB6;
     padding-top: 3px;
     padding-bottom: 3px;
     padding-left: 5px;
@@ -35,30 +52,27 @@ code {
     border-radius: 5px;
 }
 
-.bar {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+.textcontainer a {
+    color: #44A2F4;
+    text-decoration: none;
 }
 
-.foo {
-    /* display: inline-block; */
-    width: 100%;
-    margin: 10px;
+.textcontainer a:hover {
+    text-decoration: underline;
 }
 
-/* I swear I hate this stuff. */
-@media (max-width: 55em) {
-    main {
-	margin: 10px;
-	padding-left: 16px;
-	padding-right: 16px;
-
-	border: 1px solid #e1e4e8;
-	border-radius: 6px;
-    }
-
-    .bar {
-	display: block;
-    }
+.textcontainer pre {
+    background-color: #D4CBB6;
+    border-radius: 10px;
+    padding: 1em;
 }
+
+.textcontainer ul {
+    list-style-type: square;
+}
+
+.textcontainer li {
+    margin-bottom: .4em;
+}
+
+    
